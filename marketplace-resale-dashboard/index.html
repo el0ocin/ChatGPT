@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketplace Resale Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Marketplace Resale Dashboard</p>
+          <h1>Track every Facebook Marketplace and KSL listing in one view.</h1>
+          <p class="hero-text">
+            A lightweight dashboard shell for pricing, status, and buyer-interest tracking.
+            It is seeded with sample resale listings so the layout and wiring points are ready
+            before you connect real data.
+          </p>
+          <div class="assumptions">
+            <span class="section-tag">Assumptions</span>
+            <ul id="assumptionsList" class="assumption-list"></ul>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="hero-panel-card">
+            <span class="section-tag">Current scope</span>
+            <h2>Facebook Marketplace + KSL</h2>
+            <p>
+              The dashboard starts with two marketplaces, a seeded listing table, and chart
+              placeholders that are easy to swap over to API or spreadsheet imports later.
+            </p>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Data source</span>
+              <strong>Local mock data</strong>
+            </div>
+            <div>
+              <span class="meta-label">Wiring point</span>
+              <strong><code>loadDashboardData()</code></strong>
+            </div>
+          </div>
+        </aside>
+      </header>
+
+      <main class="dashboard">
+        <section class="panel filters-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-tag">Controls</span>
+              <h2>Filter the dashboard</h2>
+            </div>
+          </div>
+          <div id="toolbar" class="toolbar"></div>
+        </section>
+
+        <section>
+          <div class="section-heading">
+            <div>
+              <span class="section-tag">Headline KPIs</span>
+              <h2>Listing health at a glance</h2>
+            </div>
+          </div>
+          <div id="kpiGrid" class="kpi-grid"></div>
+        </section>
+
+        <section>
+          <div class="section-heading">
+            <div>
+              <span class="section-tag">Trends</span>
+              <h2>Marketplace momentum and pricing spread</h2>
+            </div>
+          </div>
+          <div class="visual-grid">
+            <article class="panel" id="marketplaceBoards"></article>
+            <article class="panel" id="engagementChart"></article>
+            <article class="panel" id="pricingBreakdown"></article>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-tag">Breakdown Table</span>
+              <h2>All tracked listings</h2>
+              <p class="section-copy">
+                Each row keeps the requested resale fields together, including images, title,
+                description, clicks, and inquiries.
+              </p>
+            </div>
+          </div>
+          <div id="tableSummary" class="table-summary"></div>
+          <div class="table-wrap">
+            <table class="listings-table">
+              <thead>
+                <tr>
+                  <th>Marketplace</th>
+                  <th>Status</th>
+                  <th>Item</th>
+                  <th>Category</th>
+                  <th>Subcategory</th>
+                  <th>Condition</th>
+                  <th>Quick Sale</th>
+                  <th>Max Profit</th>
+                  <th>Listing Title</th>
+                  <th>Description</th>
+                  <th>Images</th>
+                  <th>Clicks</th>
+                  <th>Inquiries</th>
+                </tr>
+              </thead>
+              <tbody id="listingsBody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
