@@ -1,1 +1,2 @@
 Job Name,Client Name,Item Name,Stage,Priority,Assigned To,Intake Received,Copy Drafted,Client Access Received,Posted,Follow-up Sent,Status,Listing URLs,Notes
+Delete This Sample Job,Delete This Sample Client,Delete This Sample Item,intake received,medium,Nicole,TRUE,FALSE,FALSE,FALSE,FALSE,active,,Delete this sample row after import

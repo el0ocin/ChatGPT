@@ -18,7 +18,7 @@ The goal is simple:
 
 ## Quick start
 1. Open [01-offer-and-pricing.md](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/docs/01-offer-and-pricing.md) and memorize the core promise.
-2. Import the CSV files in [templates/notion](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/templates/notion) into your fresh Notion account.
+2. Import the CSV files in [templates/notion](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/templates/notion) into your fresh Notion account. If Notion asks for a title property, choose the first column, then delete the sample row after import.
 3. Follow [02-notion-setup.md](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/docs/02-notion-setup.md) to create the basic relations and views.
 4. Use [intake-template.md](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/templates/client/intake-template.md) to collect the client info.
 5. Paste the prompt from [04-master-prompt.md](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/docs/04-master-prompt.md) into ChatGPT for each item.

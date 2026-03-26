@@ -10,6 +10,11 @@ Do not try to make Notion the product yet.
 3. [jobs.csv](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/templates/notion/jobs.csv)
 4. [proof-results.csv](C:/Users/el0ci/OneDrive/Documents/ChatGPT/marketplace-listing-sprint/templates/notion/proof-results.csv)
 
+## Important import note
+- Each CSV now includes one sample row so Notion will recognize the columns correctly.
+- If Notion asks for a title property, set the first column as the title property.
+- After each import, delete the sample row that starts with `Delete This Sample ...`.
+
 ## Database purposes
 - `Clients`: who you work with and how they prefer to sell
 - `Items`: each item being listed
